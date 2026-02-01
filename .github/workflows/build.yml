@@ -1,6 +1,9 @@
 name: fake-08
 
 on:
+  workflow_dispatch:
+  repository_dispatch:
+    types: [fake08_release]
   push:
     branches: '**'
   pull_request:
